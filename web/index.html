@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruimzicht · Wie is er thuis?</title>
+    <meta name="description" content="Het gedeelde weekrooster van je huis: zie per dagdeel wie er thuis is, wie weg is en wie het nog niet weet." />
+    <meta name="theme-color" content="#b5603a" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23b5603a'/%3E%3Cpath d='M8 15.5 16 9l8 6.5V24a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1z' fill='none' stroke='%23fdf8f1' stroke-width='2' stroke-linejoin='round'/%3E%3Crect x='13.5' y='17' width='5' height='5' rx='1' fill='%23f0c25a'/%3E%3C/svg%3E" />
+    <script>
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches)) {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
